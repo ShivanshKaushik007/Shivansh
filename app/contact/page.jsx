@@ -21,17 +21,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+91 7599184535",
+    description: "+91 7599188181",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "youremail@gmail.com",
+    description: "shivanshkaushik1237@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Code Corner, Tech Town 1343",
+    description: "Aryabhatt Hostel, IET Lucknow",
   },
 ];
 import { motion } from "framer-motion";
