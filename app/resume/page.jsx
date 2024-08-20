@@ -14,7 +14,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda non dolorum officia maxime eius.",
+    "I have given my contact info below please do contact me if you have a relevant project for me .",
   info: [
     {
       fieldName: "Name",
@@ -51,7 +51,7 @@ const about = {
 const education = {
   title: "My education",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae, nesciunt soluta illo itaque dolore!",
+    "Here is some details about my education I am Undergrad Student at IET lucknow pursuing Engineering in Computer Science.",
   items: [
     {
       institution: "De paul School",
@@ -75,7 +75,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, tempora aperiam debitis aspernatur nulla tenetur.",
+    "I have completed the Tech-stack shown below at Intermediate level and have advance level in Java .",
   skillList: [
     {
       icon: <FaHtml5 />,

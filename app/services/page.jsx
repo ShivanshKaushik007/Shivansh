@@ -7,29 +7,29 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, provident!  ",
-    href: "",
+      "I provide services in web development to create production level websites for individual as well as organisations.",
+    href: "/contact",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, provident!  ",
-    href: "",
+      "I can design beautiful sites with attractive design and animations for any kind of use case according to client.",
+    href: "/contact",
   },
   {
     num: "03",
     title: "Java Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, provident!  ",
-    href: "",
+      "I have experience of 6 years in Java development and provides guidance and tutorials in Java. ",
+    href: "/contact",
   },
   {
     num: "04",
     title: "Logo Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, provident!  ",
-    href: "",
+      "Although I don't have much experience in this field but have designed some logos and love to do it.",
+    href: "/contact",
   },
 ];
 import { motion } from "framer-motion";

@@ -2,6 +2,7 @@
 
 import { delay, motion } from "framer-motion";
 import Image from "next/image";
+import { FaReact } from "react-icons/fa";
 
 const Photo = () => {
   return (
@@ -23,14 +24,8 @@ const Photo = () => {
           className="w-[298px] h-[298px] 
       xl:w-[498px] xl:h-[498px] absolute  "
         >
-          <Image
-            src="/assets/img.png"
-            priority
-            quality={100}
-            fill
-            alt=""
-            className="object-contain"
-          />
+          <FaReact className="px-[100px] mx-[20px] w-[270px] h-[270px] 
+      xl:w-[460px] xl:h-[498px]  text-accent " />
         </motion.div>
 
         {/*circle*/}
@@ -54,13 +49,108 @@ const Photo = () => {
               rotate:[120, 360],
             }}
             transition={{
-              duration:20,
+              duration:15,
+              repeat:Infinity,
+              repeatType:"reverse",
+            }}
+          />
+           <motion.circle
+            cx="253"
+            cy="253"
+            r="240"
+            stroke="#00ff99"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{strokeDasharray:"24 10 0 0"}}
+            animate={{
+              strokeDasharray: ["15 120 25 25","16 25 92 72", "4 250 22 22"],
+              rotate:[120, 360],
+            }}
+            transition={{
+              duration:18,
+              repeat:Infinity,
+              repeatType:"reverse",
+            }}
+          />
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="230"
+            stroke="#00ff99"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{strokeDasharray:"24 10 0 0"}}
+            animate={{
+              strokeDasharray: ["15 120 25 25","16 25 92 72", "4 250 22 22"],
+              rotate:[120, 360],
+            }}
+            transition={{
+              duration:21,
+              repeat:Infinity,
+              repeatType:"reverse",
+            }}
+          />
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="220"
+            stroke="#00ff99"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{strokeDasharray:"24 10 0 0"}}
+            animate={{
+              strokeDasharray: ["15 120 25 25","16 25 92 72", "4 250 22 22"],
+              rotate:[120, 360],
+            }}
+            transition={{
+              duration:24,
+              repeat:Infinity,
+              repeatType:"reverse",
+            }}
+          />
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="210"
+            stroke="#00ff99"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{strokeDasharray:"24 10 0 0"}}
+            animate={{
+              strokeDasharray: ["15 120 25 25","16 25 92 72", "4 250 22 22"],
+              rotate:[120, 360],
+            }}
+            transition={{
+              duration:27,
+              repeat:Infinity,
+              repeatType:"reverse",
+            }}
+          />
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="200"
+            stroke="#00ff99"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{strokeDasharray:"24 10 0 0"}}
+            animate={{
+              strokeDasharray: ["15 120 25 25","16 25 92 72", "4 250 22 22"],
+              rotate:[120, 360],
+            }}
+            transition={{
+              duration:30,
               repeat:Infinity,
               repeatType:"reverse",
             }}
           />
         </motion.svg>
-      </motion.div>
+        </motion.div>
     </div>
   );
 };
