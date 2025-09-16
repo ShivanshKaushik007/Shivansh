@@ -27,7 +27,7 @@ const Home = () => {
             </p>
             {/*btn and socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="https://drive.google.com/file/d/1YppFeOcj6NFpLW0iqql4wlwS7s65EHG7/view?usp=sharing" >
+              <a href="https://drive.google.com/file/d/1zK3OaLAySnfmUmpQZJyUfCMZeQn__r5I/view?usp=sharing" >
               <Button
                 variant="outline"
                 size="lg"
