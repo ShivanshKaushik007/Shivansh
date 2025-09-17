@@ -42,8 +42,8 @@ If you’d like to run or modify this project:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Shivansh-Portfolio.git
-cd Shivansh-Portfolio
+git clone https://github.com/ShivanshKaushik007/Shivansh.git
+cd Shivansh
 
 # Install dependencies
 npm install
