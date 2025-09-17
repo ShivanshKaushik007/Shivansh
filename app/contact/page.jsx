@@ -34,7 +34,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Aryabhatt Hostel, IET Lucknow",
+    description: "Visvesvaraya-B Hostel, IET Lucknow",
   },
 ];
 
