@@ -26,9 +26,9 @@ const services = [
   },
   {
     num: "04",
-    title: "Logo Design",
+    title: "Graphic Design",
     description:
-      "Although I don't have much experience in this field but have designed some logos and love to do it.",
+      "Although I don't have much experience in this field but have designed some graphics and love to do it.",
     href: "/contact",
   },
 ];

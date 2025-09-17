@@ -22,7 +22,57 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Hult Prize Website",
+    category: "Swift Chat App",
+    title: "project 1",
+    desription:
+      " Swift Chat is a real-time messaging app offering fast, secure, and seamless communication. With features like instant messaging, voice and video calls, group chats, and end-to-end encryption, it ensures a smooth and private user experience for staying connected anytime, anywhere. ",
+    stack: [
+      { name: "Vite" },
+      { name: "Tailwind.css" },
+      { name: "Socket.io" },
+      { name: "MongoDB" },
+      { name: "Node.js" },
+    ],
+    image: "/assets/thumb3.png",
+    live: "https://swift-qko3.onrender.com/",
+    github: "https://github.com/ShivanshKaushik007/swift",
+  },
+  {
+    num: "02",
+    category: "LiveNote",
+    title: "project 2",
+    desription:
+      " LiveNote is a real-time collaborative note-taking application inspired by Google Docs. It enables multiple users to create, edit, and share documents simultaneously with smooth, real-time updates.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind.css" },
+      { name: "Clerk" },
+      { name: "ShadCN UI" },
+      { name: "LibeBlocks" },
+    ],
+    image: "/assets/thumb3.png",
+    live: "https://livenote-tau.vercel.app/",
+    github: "https://github.com/ShivanshKaushik007/livenote",
+  },
+  {
+    num: "03",
+    category: "FinEasy",
+    title: "project 2",
+    desription:
+      "FinEasy is a user-friendly financial management app designed to simplify budgeting, track expenses, and manage savings. It offers intuitive tools like automated expense categorization, personalized budget recommendations, and visual insights, empowering users to achieve their financial goals effortlessly. ",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+    ],
+    image: "/assets/thumb2.png",
+    live: "https://fin-easy.vercel.app/",
+    github: "https://github.com/ShivanshKaushik007/FinEasy",
+  },
+  {
+    num: "04",
+    category: "Hult Prize IET LKO",
     title: "project 1",
     desription:
       " The Hult Prize IET Lucknow website is a hub for event details, registrations, updates, and resources, showcasing the mission to inspire social change through student entrepreneurship.",
@@ -34,39 +84,22 @@ const projects = [
     ],
     image: "/assets/thumb1.png",
     live: "https://hult-iet-lko.vercel.app/",
-    github: "https://github.com/PhantomPhreak007/hult",
+    github: "https://github.com/ShivanshKaushik007/hult",
   },
   {
-    num: "02",
-    category: "FinEasy",
+    num: "05",
+    category: "E-Cell IET LKO",
     title: "project 2",
     desription:
-      "FinEasy is a user-friendly financial management app designed to simplify budgeting, track expenses, and manage savings. It offers intuitive tools like automated expense categorization, personalized budget recommendations, and visual insights, empowering users to achieve their financial goals effortlessly. ",
+      "The E-Cell Website is a dynamic and user-friendly platform designed to showcase the initiatives, events, and vision of the Entrepreneurship Cell. Built with a modern tech stack, it serves as the digital presence of the E-Cell, engaging students, mentors, and industry leaders.",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind.css" },
       { name: "Node.js" },
     ],
     image: "/assets/thumb2.png",
-    live: "",
-    github: "https://github.com/PhantomPhreak007/FinEasy",
-  },
-  {
-    num: "03",
-    category: "Swift Chat App",
-    title: "project 3",
-    desription:
-      " Swift Chat is a real-time messaging app offering fast, secure, and seamless communication. With features like instant messaging, voice and video calls, group chats, and end-to-end encryption, it ensures a smooth and private user experience for staying connected anytime, anywhere. ",
-    stack: [
-      { name: "Vite" },
-      { name: "Tailwind.css" },
-      { name: "Socket.io" },
-      { name: "MongoDB" },
-      { name: "Node.js" },
-    ],
-    image: "/assets/thumb3.png",
-    live: "",
-    github: "https://github.com/PhantomPhreak007/client",
+    live: "https://e-cell-iet-lko.vercel.app/",
+    github: "https://github.com/ShivanshKaushik007/E-cell",
   },
 ];
 
