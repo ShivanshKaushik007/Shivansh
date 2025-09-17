@@ -1,40 +1,89 @@
-<<<<<<< HEAD
-# shivansh.
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Shivansh Kaushik – Portfolio Website  
 
-## Getting Started
+Welcome to the source code of my **personal portfolio website**!  
+This site is designed to showcase **who I am, my skills, my projects, and my experiences** in Computer Science and Web Development.  
 
-First, run the development server:
+---
+
+## 👨‍💻 About Me  
+
+Hi, I’m **Shivansh Kaushik**, a **Computer Science Engineering student** passionate about:  
+- 🚀 **Web Development** (Full-Stack, MERN)  
+- 🤖 Exploring **AI & Blockchain**  
+- 💡 Solving real-world problems through **hackathons & projects**  
+- 🎯 Contributing to **open-source & developer communities**  
+
+This portfolio is my **digital identity**, where I share my journey, achievements, and projects.  
+
+---
+
+## 📑 Sections of the Website  
+
+- 🏠 **Home** – Quick intro and highlights  
+- 📜 **Resume** – My education, skills, and experiences  
+- 🛠️ **Services** – What I can do / areas of expertise  
+- 💼 **Work** – Projects, case studies, and hackathon work  
+- ✉️ **Contact** – Ways to reach me directly  
+
+---
+
+## 🚀 Tech Stack  
+
+- **Framework:** [Next.js 13](https://nextjs.org/) (App Router)  
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+- **Animations:** Framer Motion + Custom Components  
+- **Deployment:** [Vercel](https://vercel.com/)  
+
+---
+
+## ⚙️ Running Locally  
+
+If you’d like to run or modify this project:  
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/Shivansh-Portfolio.git
+cd Shivansh-Portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now visit 👉 [http://localhost:3000](http://localhost:3000)  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🌐 Live Demo  
 
-## Learn More
+🔗 **Portfolio Website:** [https://shivansh-shivansh-kaushiks-projects.vercel.app/](#)   
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Preview  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Screenshot](/Screenshotport.png)
+ 
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact Me  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> 3143765 (added)
+If you’d like to connect, collaborate, or just say hi 👋  
+
+- ✉️ Email: [shivanshkaushik1237@gmail.com](mailto:shivanshkaushik1237@gmail.com)  
+- 💼 LinkedIn: [https://www.linkedin.com/in/shivansh-kaushik-b3165827a/](#)  
+- 🐙 GitHub: [https://github.com/ShivanshKaushik007](#)  
+
+---
+
+## 📜 License  
+
+This portfolio’s code is open-sourced under the **MIT License**.  
+You’re free to use it as a reference to build your own portfolio.  
+
+---
+
+✨ Thanks for visiting my portfolio repository!  
