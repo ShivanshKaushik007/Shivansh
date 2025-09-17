@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsGithub, BsGlobe2 } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -157,7 +157,7 @@ const Work = () => {
                 {/* live project button */}
                 <Link href={project.live}>
                   <div className=" bg-white/5 w-[70px] h-[70px] rounded-full flex justify-center items-center  group">
-                    <BsArrowUpRight className="text-white  text-3xl group-hover:text-accent" />
+                    <BsGlobe2 className="text-white  text-3xl group-hover:text-accent" />
                   </div>
                 </Link>
                 {/* github project button */}
