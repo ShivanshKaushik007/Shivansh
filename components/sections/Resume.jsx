@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Experience from "./resume/Experience";
+import Positions from "./resume/Positions";
 import Education from "./resume/Education";
 import Skills from "./resume/Skills";
 import About from "./resume/About";
@@ -19,6 +20,10 @@ const Resume = () => {
       <div className="container mx-auto px-6 xl:px-12 flex flex-col gap-16 xl:gap-24">
         <div className="w-full">
           <Experience />
+        </div>
+
+        <div className="w-full">
+          <Positions />
         </div>
 
         <div className="w-full">
