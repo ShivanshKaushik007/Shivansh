@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Experience from "./resume/Experience";
 import Positions from "./resume/Positions";
+import Achievements from "./resume/Achievements";
 import Education from "./resume/Education";
 import Skills from "./resume/Skills";
 import About from "./resume/About";
@@ -24,6 +25,10 @@ const Resume = () => {
 
         <div className="w-full">
           <Positions />
+        </div>
+
+        <div className="w-full">
+          <Achievements />
         </div>
 
         <div className="w-full">
