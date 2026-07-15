@@ -3,30 +3,32 @@
 import { delay, motion } from "framer-motion";
 import Image from "next/image";
 import { FaReact } from "react-icons/fa";
+import TiltedCard from "./TiltedCard";
 
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 2, duration: 0.4, ease: "easeIn" },
-        }}
-      >
-        {/*Image*/}
+      <TiltedCard tiltMaxAngleX={12} tiltMaxAngleY={12}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
+            transition: { delay: 2, duration: 0.4, ease: "easeIn" },
           }}
-          className="w-[298px] h-[298px] 
-      xl:w-[498px] xl:h-[498px] absolute  "
         >
-          <FaReact className="px-[100px] mx-[20px] w-[270px] h-[270px] 
-      xl:w-[460px] xl:h-[498px]  text-accent " />
-        </motion.div>
+          {/*Image*/}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
+            }}
+            className="w-[298px] h-[298px] 
+        xl:w-[498px] xl:h-[498px] absolute  "
+          >
+            <FaReact className="px-[100px] mx-[20px] w-[270px] h-[270px] 
+        xl:w-[460px] xl:h-[498px]  text-accent drop-shadow-[0_0_25px_rgba(0,255,153,0.3)]" />
+          </motion.div>
 
         {/*circle*/}
         <motion.svg
@@ -151,6 +153,7 @@ const Photo = () => {
           />
         </motion.svg>
         </motion.div>
+      </TiltedCard>
     </div>
   );
 };

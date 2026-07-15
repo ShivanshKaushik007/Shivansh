@@ -9,17 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.19.3",
     "@nextui-org/tooltip": "^2.0.39",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-scroll-area": "^1.1.0",
     "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.0",
+    "@react-three/drei": "^9.102.6",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/rapier": "^2.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.3.8",
     "lucide-react": "^0.408.0",
+    "meshline": "^3.3.1",
     "next": "14.2.5",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
@@ -29,6 +34,7 @@
     "swiper": "^11.2.1",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.166.0",
     "tooltip": "^1.6.1"
   },
   "devDependencies": {

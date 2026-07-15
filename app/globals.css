@@ -22,3 +22,16 @@
         -webkit-text-stroke: 1px #00ff99;
     }
 }
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-shine {
+  animation: shine 5s linear infinite;
+}

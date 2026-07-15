@@ -3,8 +3,7 @@ import "./globals.css";
 
 //components
 import Header from "@/components/ui/header";
-import PageTransition from "@/components/ui/PageTransition";
-import StairTransition from "@/components/ui/StairTransition";
+import ShapeGrid from "@/components/ui/ShapeGrid";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -19,13 +18,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={jetbrainsMono.variable}>
-        <Header />
-        <StairTransition />
-        <PageTransition>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${jetbrainsMono.variable} bg-primary text-white min-h-screen relative`}>
+        {/* Background Animation */}
+        <div className="fixed inset-0 -z-10 w-full h-full overflow-hidden pointer-events-none">
+          <ShapeGrid
+            direction="diagonal"
+            speed={0.2}
+            borderColor="rgba(0, 255, 153, 0.05)"
+            hoverFillColor="rgba(0, 255, 153, 0.08)"
+            squareSize={60}
+            shape="square"
+            hoverTrailAmount={4}
+          />
+        </div>
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Header />
           {children}
-        </PageTransition>
+        </div>
       </body>
     </html>
   );

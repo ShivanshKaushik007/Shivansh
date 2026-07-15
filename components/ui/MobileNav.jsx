@@ -1,9 +1,10 @@
 "use client";
 
-import{Sheet, SheetContent, SheetTrigger} from '@/components/ui/sheet'
-import {usePathname} from 'next/navigation';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet'
 import Link from 'next/link';
-import { CiMenuBurger, CiMenuFries } from "react-icons/ci";
+import { usePathname } from 'next/navigation';
+import { CiMenuBurger } from "react-icons/ci";
+import { useEffect, useState } from "react";
 
 const links = [
     {
@@ -12,51 +13,78 @@ const links = [
     },
     {
         name: "services",
-        path: "/services",
+        path: "/#services",
     },
     {
         name: "resume",
-        path: "/resume",
+        path: "/#resume",
     },
     {
         name: "work",
-        path: "/work",
+        path: "/#work",
     },
     {
         name: "contact",
-        path: "/contact",
+        path: "/#contact",
+    },
+    {
+        name: "blog",
+        path: "/blog",
     },
 ]
+
 const MobileNav = () => {
-    const pathname=usePathname();
-  return  <Sheet>
+  const pathname = usePathname();
+  const [activePath, setActivePath] = useState("/");
+
+  useEffect(() => {
+    if (pathname.includes("/blog")) {
+      setActivePath("/blog");
+      return;
+    }
+    const handleHashChange = () => {
+      setActivePath(`/${window.location.hash}`);
+    };
+    // Initialize
+    setActivePath(window.location.hash ? `/${window.location.hash}` : "/");
+    
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [pathname]);
+
+  return  (
+  <Sheet>
     <SheetTrigger className="flex justify-center items-center">
-        <CiMenuBurger className="text- [32px] text-accent "/>
+        <CiMenuBurger className="text-[32px] text-accent"/>
     </SheetTrigger>
     <SheetContent className="flex flex-col">
         <div className="mt-28 mb-10 text-center text-2xl">
-            <Link href="/">
-            <h1 className="text-4xl font-semibold">
-                Shivansh<span className="text-accent">.</span>
-                </h1>
-            </Link>
+            <SheetClose asChild>
+                <Link href="/" onClick={() => setActivePath("/")}>
+                    <h1 className="text-4xl font-semibold">
+                        Shivansh<span className="text-accent">.</span>
+                    </h1>
+                </Link>
+            </SheetClose>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8  ">
-            {links.map((link, index)=>{
+        <nav className="flex flex-col justify-center items-center gap-8">
+            {links.map((link, index) => {
               return (
-              <Link 
-                href ={link.path} 
-                key ={index} 
-                 className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}
-                 >
-                    {link.name}
-               </Link>     
+              <SheetClose asChild key={index}>
+                  <Link 
+                    href={link.path} 
+                    onClick={() => setActivePath(link.path)}
+                    className={`${link.path === activePath && "text-accent border-b-2 border-accent"} text-xl capitalize hover:text-accent transition-all`}
+                  >
+                      {link.name}
+                  </Link>
+              </SheetClose>
             );
             })}
         </nav>
-
     </SheetContent>
-  </Sheet>;
+  </Sheet>
+  );
 };
 
 export default MobileNav;
