@@ -1,4 +1,3 @@
-import { ScrollArea } from "@/components/ui/scroll-area";
 import SpotlightCard from "@/components/ui/SpotlightCard";
 
 const education = {
@@ -31,7 +30,7 @@ const Education = () => {
       <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-relaxed mb-4">
         {education.description}
       </p>
-      <ScrollArea className="h-[400px]">
+      <div>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-1">
           {education.items.map((item, index) => {
             return (
@@ -54,7 +53,7 @@ const Education = () => {
             );
           })}
         </ul>
-      </ScrollArea>
+      </div>
     </div>
   );
 };

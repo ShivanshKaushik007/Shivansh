@@ -1,4 +1,3 @@
-import { ScrollArea } from "@/components/ui/scroll-area";
 import SpotlightCard from "@/components/ui/SpotlightCard";
 
 const achievements = {
@@ -28,7 +27,7 @@ const Achievements = () => {
       <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-relaxed mb-4">
         {achievements.description}
       </p>
-      <ScrollArea className="h-auto">
+      <div>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-1">
           {achievements.items.map((item, index) => {
             return (
@@ -55,7 +54,7 @@ const Achievements = () => {
             );
           })}
         </ul>
-      </ScrollArea>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import { ScrollArea } from "@/components/ui/scroll-area";
 import SpotlightCard from "@/components/ui/SpotlightCard";
 
 const positions = {
@@ -34,7 +33,7 @@ const Positions = () => {
       <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 leading-relaxed mb-4">
         {positions.description}
       </p>
-      <ScrollArea className="h-[450px]">
+      <div>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-1">
           {positions.items.map((item, index) => {
             return (
@@ -61,7 +60,7 @@ const Positions = () => {
             );
           })}
         </ul>
-      </ScrollArea>
+      </div>
     </div>
   );
 };
