@@ -58,13 +58,9 @@ const Blog = () => {
           </p>
 
           <h2 className="mb-5 text-2xl font-bold text-white">A quick look at the architecture</h2>
-          <pre className="mb-12 overflow-x-auto border-l-2 border-accent bg-black/20 p-6 font-mono text-sm leading-6 text-accent/80">{`React + TypeScript frontend
-          |
-    REST API + Socket.IO
-          |
-Express + TypeScript backend
-     |          |          |
- MongoDB     Redis     Cloudinary`}</pre>
+          <p className="mb-12 border-l-2 border-accent bg-black/20 p-6 font-mono text-sm leading-6 text-accent/80">
+            React and TypeScript power the frontend. REST API and Socket.IO connect it to the Express and TypeScript backend, with MongoDB, Redis, and Cloudinary supporting the platform.
+          </p>
           <p className="mb-12">
             MongoDB stores users, channels, messages, workspaces, notifications, and related records. Socket.IO handles activity that should not wait for a refresh, Cloudinary handles media, and Redis support gives the real-time layer a path toward multiple server instances.
           </p>
