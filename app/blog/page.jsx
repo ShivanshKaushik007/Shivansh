@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const sections = [
   ["The idea: chat should feel immediate, not transactional", "There is a big difference between an app that stores messages and an app that feels like people are actually present in it. For Swift Chat, the target experience was simple: send direct messages instantly, use channels for group conversations, share files naturally, reply without losing context, and make the product polished enough for a real team.", "That meant treating the project as a system, not a collection of separate pages. A new message can affect the database, both screens, a channel feed, a notification, a read state, and possibly a thread."],
@@ -32,7 +33,7 @@ const Blog = () => {
               </p>
             </div>
             <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5 p-4">
-              <img src="/assets/swift.png" alt="Swift Chat project" className="h-40 w-full object-contain" />
+              <Image src="/assets/swift.png" alt="Swift Chat project" width={240} height={160} className="h-40 w-full object-contain" />
               <p className="mt-3 text-xs text-white/45">React, TypeScript, Vite, Node.js, MongoDB, Socket.IO, WebRTC</p>
             </div>
           </div>
